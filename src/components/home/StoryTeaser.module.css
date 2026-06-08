@@ -1,0 +1,53 @@
+.section {
+  position: relative;
+  background: var(--color-bg-green);
+  padding: var(--space-12) 0;
+  overflow: hidden;
+}
+
+.sparkle {
+  position: absolute;
+  color: var(--color-moss);
+  font-size: 1.6rem;
+  opacity: 0.5;
+  font-style: normal;
+}
+
+.sparkleOne {
+  top: 14%;
+  left: 12%;
+}
+
+.sparkleTwo {
+  bottom: 18%;
+  right: 14%;
+}
+
+.inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  position: relative;
+  z-index: 1;
+}
+
+.quote {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.45;
+  color: var(--color-on-green);
+}
+
+.attribution {
+  margin-top: var(--space-3);
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--color-on-green-muted);
+}

@@ -1,0 +1,94 @@
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+}
+
+.track {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  cursor: ew-resize;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.layerLabel {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 20, 0.55);
+  padding: var(--space-2);
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-bg-primary);
+  transform: translateX(-1px);
+  pointer-events: none;
+}
+
+.handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-bg-green);
+  color: var(--color-on-green);
+  pointer-events: none;
+}
+
+.badge {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  background: var(--color-bg-green);
+  color: var(--color-on-green);
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+  font-size: 0.72rem;
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+.meta {
+  padding: var(--space-3) var(--space-4) var(--space-4);
+}
+
+.label {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-green);
+  margin-bottom: var(--space-1);
+}
+
+.note {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--color-ink-muted);
+}

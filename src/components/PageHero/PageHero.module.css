@@ -1,0 +1,72 @@
+.hero {
+  position: relative;
+  background: var(--color-bg-green);
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  padding: 160px 0 var(--space-8);
+  overflow: hidden;
+}
+
+.sparkle {
+  position: absolute;
+  color: var(--color-moss);
+  font-size: 1.4rem;
+  opacity: 0.5;
+  font-style: normal;
+}
+
+.sparkleOne {
+  top: 24%;
+  right: 16%;
+}
+
+.sparkleTwo {
+  bottom: 18%;
+  right: 28%;
+}
+
+.sidePanels {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.headline {
+  font-family: var(--font-display), serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  line-height: 1.18;
+  color: var(--color-on-green);
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.subtext {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-on-green-muted);
+  max-width: 520px;
+}
+
+@media (max-width: 1024px) {
+  .sidePanels {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .sparkleOne,
+  .sparkleTwo {
+    display: none;
+  }
+}

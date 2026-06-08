@@ -1,0 +1,30 @@
+.box {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 16px;
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.lead {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--color-ink);
+}
+
+.body {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-ink-muted);
+  max-width: 520px;
+}

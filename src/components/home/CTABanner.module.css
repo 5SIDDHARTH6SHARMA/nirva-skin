@@ -1,0 +1,51 @@
+.section {
+  position: relative;
+  background: var(--color-bg-secondary);
+  padding: var(--space-20) 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.glow {
+  width: 200px;
+  height: 200px;
+  background: var(--color-blob-1);
+  opacity: 0.6;
+  filter: blur(60px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  text-align: center;
+}
+
+.subtext {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-6);
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-ink-muted);
+  max-width: 520px;
+}
+
+.fineprint {
+  margin-top: var(--space-3);
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.78rem;
+  color: var(--color-ink-muted);
+}

@@ -1,0 +1,42 @@
+.section {
+  position: relative;
+  background: var(--color-bg-primary);
+  padding: 160px 0 var(--space-12);
+  overflow: hidden;
+}
+
+.decorBlob {
+  position: absolute;
+  bottom: -140px;
+  right: -110px;
+  width: 460px;
+  height: 460px;
+  z-index: 0;
+}
+
+.containerOuter {
+  position: relative;
+  z-index: 1;
+}
+
+.inner {
+  max-width: 620px;
+}
+
+.headline {
+  font-family: var(--font-display), serif;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+  line-height: 1.18;
+  color: var(--color-ink);
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.headline em {
+  font-style: italic;
+}
+
+.subtext {
+  max-width: 460px;
+  margin-top: var(--space-4);
+}

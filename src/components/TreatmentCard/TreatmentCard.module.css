@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: var(--space-4);
+  height: 100%;
+  box-shadow: var(--shadow-card);
+  transition: transform 250ms var(--ease-out), box-shadow 250ms var(--ease-out),
+    border-color 250ms var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-elevated);
+  border-color: var(--color-border-strong);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--color-ink-muted);
+}
+
+.line {
+  margin: var(--space-1) 0;
+}
+
+.title {
+  font-family: var(--font-display), serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--color-ink);
+}
+
+.body {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--color-ink-muted);
+  flex: 1;
+}
+
+.explore {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--color-green);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  width: fit-content;
+}
+
+.arrowCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-green);
+  transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out),
+    transform 200ms var(--ease-out);
+}
+
+.explore:hover .arrowCircle {
+  background: var(--color-green);
+  color: var(--color-on-green);
+  transform: translateX(2px);
+}

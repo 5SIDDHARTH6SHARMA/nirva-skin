@@ -1,0 +1,208 @@
+.card {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 20px;
+  padding: 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.label {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-ink-muted);
+}
+
+.input,
+.textarea,
+.select {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--color-ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border-strong);
+  border-radius: 0;
+  padding: 10px 2px;
+  outline: none;
+  transition: border-color 300ms var(--ease-out);
+  width: 100%;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-bottom-color: var(--color-green);
+}
+
+.textarea {
+  resize: vertical;
+  font-family: var(--font-body), sans-serif;
+}
+
+.selectWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 28px;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 2px;
+  color: var(--color-ink-muted);
+  pointer-events: none;
+}
+
+.radioGroup {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-1);
+}
+
+.radioOption {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.92rem;
+  color: var(--color-ink);
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.radioInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.radioCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-strong);
+  flex-shrink: 0;
+}
+
+.radioDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 200ms var(--ease-out);
+}
+
+.radioInput:checked + .radioCircle {
+  border-color: var(--color-green);
+}
+
+.radioInput:checked + .radioCircle .radioDot {
+  background: var(--color-green);
+}
+
+.radioInput:focus-visible + .radioCircle {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+.submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 52px;
+  border-radius: 999px;
+  background: var(--color-bg-green);
+  color: var(--color-on-green);
+  font-family: var(--font-body), sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  margin-top: var(--space-2);
+  transition: background 300ms var(--ease-out);
+}
+
+.submit:hover {
+  background: var(--color-bg-green-mid);
+}
+
+.footnote {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--color-ink-muted);
+  text-align: center;
+  margin-top: var(--space-1);
+}
+
+.whatsapp {
+  color: var(--color-green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  padding: var(--space-6) 0;
+}
+
+.successGlyph {
+  font-size: 2rem;
+  color: var(--color-moss);
+}
+
+.successHeadline {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--color-ink);
+}
+
+.successBody {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--color-ink-muted);
+  max-width: 360px;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 32px 24px;
+  }
+}

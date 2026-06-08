@@ -1,0 +1,26 @@
+.section {
+  background: var(--color-bg-primary);
+  padding: var(--space-12) 0;
+}
+
+.heading {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto var(--space-8);
+}
+
+.heading .eyebrow {
+  margin-bottom: var(--space-2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

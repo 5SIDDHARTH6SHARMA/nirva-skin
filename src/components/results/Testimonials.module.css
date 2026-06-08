@@ -1,0 +1,70 @@
+.section {
+  background: var(--color-bg-secondary);
+  padding: var(--space-12) 0;
+}
+
+.heading {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto var(--space-8);
+}
+
+.heading .eyebrow {
+  margin-bottom: var(--space-2);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.card {
+  position: relative;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-moss);
+  border-radius: 16px;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.quoteMark {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--color-moss);
+  opacity: 0.5;
+}
+
+.quote {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-ink);
+  margin-top: -16px;
+}
+
+.attribution {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-moss);
+  margin-top: var(--space-1);
+}
+
+@media (max-width: 1024px) {
+  .row {
+    grid-template-columns: repeat(5, minmax(280px, 1fr));
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: var(--space-2);
+  }
+  .card {
+    scroll-snap-align: start;
+  }
+}

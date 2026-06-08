@@ -1,0 +1,55 @@
+.card {
+  background: var(--color-bg-green);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  color: var(--color-on-green);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-on-green);
+}
+
+.itemMultiline {
+  align-items: flex-start;
+}
+
+.icon {
+  color: var(--color-moss);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.mapWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-3);
+}
+
+.mapLabel {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--color-on-green-muted);
+}
