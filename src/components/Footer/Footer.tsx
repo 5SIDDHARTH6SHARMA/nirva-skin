@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottomBar}>
-        <p>© 2025 Nirva Skin. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Nirva Skin. All rights reserved.</p>
       </div>
     </footer>
   );
